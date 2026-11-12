@@ -1,0 +1,231 @@
+{
+  "dataset_shape": [
+    891,
+    12
+  ],
+  "data_url": "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv",
+  "sha256": "4a437fde05fe5264e1701a7387ac6fb75393772ba38bb2c9c566405af5af4bd7",
+  "seed": 42,
+  "train_n": 712,
+  "test_n": 179,
+  "cv_folds": 5,
+  "eda": {
+    "outliers": [
+      {
+        "feature": "Age",
+        "q1": 21.0,
+        "q3": 39.0,
+        "lower": -6.0,
+        "upper": 66.0,
+        "outliers": 6,
+        "outlier_pct": 0.8426966292134831,
+        "min": 0.42,
+        "max": 80.0
+      },
+      {
+        "feature": "Fare",
+        "q1": 7.8958,
+        "q3": 31.0,
+        "lower": -26.7605,
+        "upper": 65.6563,
+        "outliers": 91,
+        "outlier_pct": 12.780898876404494,
+        "min": 0.0,
+        "max": 512.3292
+      },
+      {
+        "feature": "SibSp",
+        "q1": 0.0,
+        "q3": 1.0,
+        "lower": -1.5,
+        "upper": 2.5,
+        "outliers": 33,
+        "outlier_pct": 4.634831460674158,
+        "min": 0.0,
+        "max": 8.0
+      },
+      {
+        "feature": "Parch",
+        "q1": 0.0,
+        "q3": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "outliers": 170,
+        "outlier_pct": 23.876404494382022,
+        "min": 0.0,
+        "max": 6.0
+      }
+    ],
+    "duplicated_rows": 0,
+    "target_all": {
+      "0": 549,
+      "1": 342
+    },
+    "target_train": {
+      "0": 439,
+      "1": 273
+    },
+    "survival_by_sex": {
+      "female": 0.7430830039525692,
+      "male": 0.18518518518518517
+    },
+    "survival_by_class": {
+      "1": 0.6491228070175439,
+      "2": 0.44666666666666666,
+      "3": 0.24296675191815856
+    }
+  },
+  "selected_experiment": "Top-10",
+  "selected_model": "RF",
+  "selected_config": {
+    "name": "Top-10",
+    "imputation": "median",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "selection": true,
+    "engineered": true
+  },
+  "untuned_cv_f1": 0.7730586929328485,
+  "best_params": {
+    "model__max_depth": 8,
+    "model__min_samples_leaf": 2
+  },
+  "tuned_cv_f1": 0.7831913694684183,
+  "holdout": {
+    "Accuracy": 0.8268156424581006,
+    "Precision": 0.8064516129032258,
+    "Recall": 0.7246376811594203,
+    "F1": 0.7633587786259542,
+    "ROC_AUC": 0.8521739130434782
+  },
+  "holdout_ci95": {
+    "Accuracy": [
+      0.770949720670391,
+      0.88268156424581
+    ],
+    "Precision": [
+      0.7,
+      0.8983112257430607
+    ],
+    "Recall": [
+      0.6129032258064516,
+      0.8333333333333334
+    ],
+    "F1": [
+      0.6771535137055237,
+      0.8395108849307322
+    ],
+    "ROC_AUC": [
+      0.7827341258870668,
+      0.9126407821575026
+    ]
+  },
+  "confusion_matrix": [
+    [
+      98,
+      12
+    ],
+    [
+      19,
+      50
+    ]
+  ],
+  "selected_features": [
+    "Title_Mr",
+    "Sex_female",
+    "Sex_male",
+    "FarePerPerson",
+    "Fare",
+    "Age",
+    "Pclass_3",
+    "FamilySize",
+    "Title_Miss",
+    "Title_Mrs"
+  ],
+  "transformed_features_before": 20,
+  "transformed_features_after": 10,
+  "shap": {
+    "base_value": 0.3835049937578027,
+    "additivity_max_error": 2.2065682614424986e-15,
+    "features": [
+      {
+        "feature": "Title_Mr",
+        "mean_abs_shap": 0.09469276589980388,
+        "mean_shap": 0.015463986350885623,
+        "value_shap_corr": -0.9789977161680036
+      },
+      {
+        "feature": "Sex_male",
+        "mean_abs_shap": 0.07868370461592998,
+        "mean_shap": -0.00555882034632279,
+        "value_shap_corr": -0.9695214961060162
+      },
+      {
+        "feature": "FarePerPerson",
+        "mean_abs_shap": 0.07357119386626461,
+        "mean_shap": -0.0034585063983170374,
+        "value_shap_corr": 0.4530095925190757
+      },
+      {
+        "feature": "Sex_female",
+        "mean_abs_shap": 0.06305726454072101,
+        "mean_shap": -0.0050165783441736035,
+        "value_shap_corr": 0.9679399749702247
+      },
+      {
+        "feature": "Pclass_3",
+        "mean_abs_shap": 0.03710875522345243,
+        "mean_shap": 0.004604695783677295,
+        "value_shap_corr": -0.730036469767075
+      },
+      {
+        "feature": "Fare",
+        "mean_abs_shap": 0.03141323972457872,
+        "mean_shap": 0.004964711133215286,
+        "value_shap_corr": 0.4334518714804278
+      },
+      {
+        "feature": "Age",
+        "mean_abs_shap": 0.02854083938634868,
+        "mean_shap": -0.003575316325800625,
+        "value_shap_corr": -0.7286841426681456
+      },
+      {
+        "feature": "FamilySize",
+        "mean_abs_shap": 0.02178650587943837,
+        "mean_shap": 0.0038301146832769558,
+        "value_shap_corr": -0.5779568436137413
+      },
+      {
+        "feature": "Title_Mrs",
+        "mean_abs_shap": 0.011553995147718172,
+        "mean_shap": -0.005145502034375593,
+        "value_shap_corr": 0.9471913403774412
+      },
+      {
+        "feature": "Title_Miss",
+        "mean_abs_shap": 0.008244678547805608,
+        "mean_shap": -0.0007632766414691063,
+        "value_shap_corr": 0.7853864747379151
+      }
+    ]
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "shap": "0.54.1",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2",
+    "joblib": "1.6.0",
+    "reportlab": "5.0.1",
+    "pypdf": "6.17.0",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  },
+  "python": "3.13.18",
+  "executed_utc": "2026-11-11T18:11:54.907515+00:00",
+  "elapsed_seconds": 74.27
+}

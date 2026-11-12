@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Base",
+    "imputation": "none",
+    "encoding": "none",
+    "scaling": "none",
+    "selection": false,
+    "engineered": false,
+    "baseline": true
+  },
+  {
+    "name": "Exp-1",
+    "imputation": "mean",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "selection": false,
+    "engineered": true
+  },
+  {
+    "name": "Exp-2",
+    "imputation": "median",
+    "encoding": "ordinal",
+    "scaling": "minmax",
+    "selection": true,
+    "engineered": true
+  },
+  {
+    "name": "Exp-3",
+    "imputation": "most_frequent",
+    "encoding": "onehot",
+    "scaling": "robust",
+    "selection": true,
+    "engineered": true
+  },
+  {
+    "name": "Ref",
+    "imputation": "median",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "selection": false,
+    "engineered": true
+  },
+  {
+    "name": "No-FE",
+    "imputation": "median",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "selection": false,
+    "engineered": false
+  },
+  {
+    "name": "Ordinal",
+    "imputation": "median",
+    "encoding": "ordinal",
+    "scaling": "standard",
+    "selection": false,
+    "engineered": true
+  },
+  {
+    "name": "MinMax",
+    "imputation": "median",
+    "encoding": "onehot",
+    "scaling": "minmax",
+    "selection": false,
+    "engineered": true
+  },
+  {
+    "name": "Robust",
+    "imputation": "median",
+    "encoding": "onehot",
+    "scaling": "robust",
+    "selection": false,
+    "engineered": true
+  },
+  {
+    "name": "No-Scale",
+    "imputation": "median",
+    "encoding": "onehot",
+    "scaling": "none",
+    "selection": false,
+    "engineered": true
+  },
+  {
+    "name": "Top-10",
+    "imputation": "median",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "selection": true,
+    "engineered": true
+  },
+  {
+    "name": "Mode",
+    "imputation": "most_frequent",
+    "encoding": "onehot",
+    "scaling": "standard",
+    "selection": false,
+    "engineered": true
+  }
+]

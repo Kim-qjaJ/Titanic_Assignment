@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checks": [
+    "data SHA-256",
+    "891 unique records",
+    "holdout disjointness",
+    "all five folds disjoint and complete",
+    "24 experiment means from 120 fold rows",
+    "fresh-process model reload",
+    "saved predictions reproduce exactly",
+    "metrics recomputed from confusion matrix",
+    "train-validation gap consistent",
+    "SHAP additivity",
+    "12-page PDF with all page numbers and matching headline metrics"
+  ],
+  "sha256": "4a437fde05fe5264e1701a7387ac6fb75393772ba38bb2c9c566405af5af4bd7",
+  "holdout_rows": 179,
+  "cv_experiments": 24
+}

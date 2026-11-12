@@ -1,0 +1,13 @@
+﻿column,dtype,missing_all,missing_all_pct,missing_train,missing_train_pct,unique_all
+PassengerId,int64,0,0.0,0,0.0,891
+Survived,int64,0,0.0,0,0.0,2
+Pclass,int64,0,0.0,0,0.0,3
+Name,str,0,0.0,0,0.0,891
+Sex,str,0,0.0,0,0.0,2
+Age,float64,177,19.865319865319865,137,19.241573033707866,88
+SibSp,int64,0,0.0,0,0.0,7
+Parch,int64,0,0.0,0,0.0,7
+Ticket,str,0,0.0,0,0.0,681
+Fare,float64,0,0.0,0,0.0,248
+Cabin,str,687,77.10437710437711,552,77.52808988764045,147
+Embarked,str,2,0.22446689113355783,2,0.2808988764044944,3
